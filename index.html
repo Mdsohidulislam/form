@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .user__form{ 
+            font-family: sans-serif;
+            max-width: 350px;
+            margin: 30px auto; 
+            background-image: linear-gradient(33deg,#cc2b5e , #753a88);
+            padding:10px;
+            box-sizing: border-box;
+        }
+        form input{
+            width:100%;
+            box-sizing: border-box;
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            padding-left: 10px;
+        }
+
+        form button{
+            width:100%;
+            box-sizing: border-box; 
+            background-image: linear-gradient(33deg,#56ab2f, #a8e063);
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            padding-left: 10px;
+            border: none;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        form input::placeholder{
+            padding-left: 10px;
+        }
+        .or__div hr{ 
+
+            position: absolute;
+            top: 22px; 
+            border:2px solid white;
+            width:99%;
+        }
+        .or__div{  
+             height:60px;
+             position: relative;
+        }
+        .or__div p{
+            position:absolute; 
+            font-size: 30px; 
+            top: -16px;
+            margin-left: 130px;  
+            background-color: #B12F6B;
+            color: white;
+            width:80px;
+            text-align: center;
+        }
+        .choose__div{
+            text-align: center;
+        }
+        .choose__div small{
+            color: white; 
+            font-size:15px;
+        }
+        .choose__div span{
+            color: yellow;
+            cursor:pointer;
+            text-decoration:underline;
+            font-size: 19px;
+            font-style: italic;
+        }
+        .sing__up__via_form{
+            padding: 10px 0;
+            width:100%;  
+            position:relative;
+        }
+
+        .sing__up__via_form img{
+            height:32px;
+            padding:4px;
+        }
+
+        .sing__up__via_form button{
+            width:100%;
+            box-sizing: border-box; 
+            background-image: linear-gradient(33deg,#56ab2f, #a8e063);
+            height: 40px;
+            margin-bottom: 10px;
+            outline: none;
+            padding-left: 10px;
+            border: none;
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+        }
+        .sing__up__via_form div{
+            width:100%;
+            box-sizing: border-box; 
+            background-image: linear-gradient(33deg,#56ab2f, #a8e063);
+            height: 40px;
+            margin-bottom: 10px;   
+            font-size: 16px;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        .sing__up__via_form span{ 
+            position:absolute; 
+            right:10px;
+            top: 8px;
+        }
+    </style>
+    <title>User form </title>
+</head>
+<body>
+    <div class="user__form">
+        <form action="">
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <input type="email" placeholder="Enter your email address" name="email" id="email"><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+            <input type="password" name="confirm__password" id="confirm__password" placeholder="Enter your confirm password"><br>   
+            <button type="submit" name="submit">CREATE ACCCOUNT</button>
+        </form>
+        <form action=""> 
+            <input type="email" placeholder="Enter your email address" name="email" id="email"><br>
+            <input type="password" name="password" id="password" placeholder="Enter your password"><br>   
+            <button type="submit" name="submit">login</button>
+        </form>
+        <div class="sing__up__via_form"> 
+            <div>
+                <img src="images/google.jpg" alt="">
+                <span>log in via google</span>
+            </div>
+
+            <div>
+                <img src="images/facebook.png" alt="">
+                <span>log in via facebook</span>
+            </div>
+
+            <div>
+                <img src="images/twitter.png" alt="">
+                <span>log in via twitter</span>
+            </div>
+        </div>
+        <div class="or__div"> 
+            <hr>
+            <p>OR</p> 
+        </div>
+        <div class="choose__div">
+            <small>Already have an account? <span>login</span></small><br>
+            <small>Don't have an account? <span>create an account</span></small>
+        </div>
+    </div>  
+</body>
+</html>
